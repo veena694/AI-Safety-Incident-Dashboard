@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './App.css';
+import IncidentCard from './components/IncidentCard';
 
 const initialIncidents = [
   {
@@ -83,26 +84,12 @@ function App() {
       </div>
 
       <div className="incident-list">
-        <div className="incident-header">
-          <div>Title</div>
-          <div>Severity</div>
-          <div>Reported Date</div>
-          <div>Action</div>
-        </div>
-
         {filteredIncidents.map((incident) => (
-          <div key={incident.id} className="incident-card">
-            <div className="incident-title">{incident.title}</div>
-            <div>
-              <span className={`severity-pill ${incident.severity.toLowerCase()}`}>
-                {incident.severity}
-              </span>
-            </div>
-            <div>{incident.reported_at}</div>
-            <div>
-              <button onClick={() => setSelectedIncident(incident)}>View Details</button>
-            </div>
-          </div>
+          <IncidentCard
+            key={incident.id}
+            incident={incident}
+            onViewDetails={() => setSelectedIncident(incident)}
+          />
         ))}
       </div>
 
@@ -151,7 +138,7 @@ function App() {
         <div className="incident-details">
           <h3>{selectedIncident.title}</h3>
           <p><strong>Severity:</strong> {selectedIncident.severity}</p>
-          <p><strong>Reported At:</strong> {selectedIncident.reported_at}</p>
+          <p><strong>Reported At:</strong> {new Date(selectedIncident.reported_at).toLocaleString()}</p>
           <p><strong>Description:</strong> {selectedIncident.description}</p>
           <button onClick={() => setSelectedIncident(null)}>Close</button>
         </div>
