@@ -145,7 +145,7 @@ This project was built as part of a learning exercise to understand state manage
 For any questions or feedback, feel free to reach out:
 
 - Name: **[Raghav Gupta]**
-- Email: **[raghavguptadanta@gmail.com]**
-- LinkedIn: [https://www.linkedin.com/in/raghav-gupta2003/]
+- Email: **[veenasardana1@gmail.com]**
+- LinkedIn: [https://www.linkedin.com/in/veena-sardana/]
 
 ---
