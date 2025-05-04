@@ -1,5 +1,5 @@
 # 🛡️ AI Safety Incident Dashboard
-https://ai-safety-dashboard-psi.vercel.app/
+https://ai-safety-incident-dashboard-seven.vercel.app/
 
 ## Introduction
 
