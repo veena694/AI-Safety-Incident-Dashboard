@@ -1,0 +1,185 @@
+body {
+  background: #f5f5f5;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 600px;
+  background: white;
+  margin: 40px auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  padding: 20px;
+}
+
+.header {
+  background: #1d4ed8;
+  color: white;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  padding: 20px;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.controls div {
+  display: flex;
+  flex-direction: column;
+}
+
+.controls select {
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin-top: 5px;
+}
+
+.incident-list {
+  margin-top: 20px;
+}
+
+.incident-header, .incident-card {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  align-items: center;
+  padding: 10px;
+}
+
+.incident-header {
+  font-weight: bold;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 10px;
+}
+
+.incident-card {
+  background: #fafafa;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.incident-title {
+  font-weight: 500;
+}
+
+.severity-pill {
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  color: white;
+  display: inline-block;
+  text-align: center;
+}
+
+.severity-pill.low {
+  background-color: #34d399;
+}
+
+.severity-pill.medium {
+  background-color: #f59e0b;
+}
+
+.severity-pill.high {
+  background-color: #ef4444;
+}
+
+.incident-form {
+  margin-top: 30px;
+  padding: 20px;
+  background: #fafafa;
+  border-radius: 8px;
+  border: 1px solid #eee;
+}
+
+.incident-form h2 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.incident-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.incident-form input[type="text"] {
+  width: 100%;
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin-bottom: 15px;
+}
+
+.severity-options {
+  display: flex;
+  gap: 15px;
+  margin: 10px 0;
+}
+
+.severity-options label {
+  font-weight: normal;
+}
+
+.incident-form button {
+  background: #1d4ed8;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.incident-form button:hover {
+  background: #2563eb;
+}
+
+
+.incident-details {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  border: 2px solid #ddd;
+  border-radius: 12px;
+  padding: 20px;
+  width: 90%;
+  max-width: 500px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+.incident-details h3 {
+  margin-top: 0;
+  color: #333;
+}
+
+.incident-details p {
+  margin: 10px 0;
+  line-height: 1.5;
+}
+
+.incident-details button {
+  margin-top: 20px;
+  padding: 8px 16px;
+  background-color: #007bff;
+  border: none;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.incident-details button:hover {
+  background-color: #0056b3;
+}
+
